@@ -56,7 +56,7 @@
         android:id="@+id/openUrl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Open url"
+        android:text="Show list view"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/to1stActivy"/>
 

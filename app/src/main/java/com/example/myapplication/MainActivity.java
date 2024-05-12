@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     TextView content;
 
     Button to1stActivity;
+    Button opnListView;
     ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             (result) -> {
@@ -71,6 +72,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        opnListView = findViewById(R.id.openUrl);
+
+
+        opnListView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), ListViewActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
